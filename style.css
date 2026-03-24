@@ -1,0 +1,135 @@
+/* --- Estilos Generales --- */
+* {
+    padding: 0;
+    margin: 0;
+    transition: 0.7s;
+    cursor: url('https://xatimg.com/image/V9zs8cVJRTQy.png'), auto;
+}
+
+html, body {
+    height: 100%;
+    background: #000000;
+}
+
+b, bold, strong {
+    font-weight: bold;
+}
+
+/* --- Barras de desplazamiento (Scrollbar) --- */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+/* --- Selectores Personalizados --- */
+[name="Fuck"] {
+    background: rgba(255, 218, 185, 0.3);
+}
+
+[name="yas"] {
+    opacity: 1;
+}
+
+/* --- Contenedor 'dis' y sus enlaces --- */
+[name="dis"] {
+    position: relative;
+    z-index: 9;
+    margin-top: 5px;
+    transition: 0.9s;
+}
+
+[name="dis"] a {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80px;
+    padding: 5px 10px;
+    letter-spacing: 2.3px;
+    line-height: 10px;
+    height: 10px;
+    color: #575757;
+    margin: 2.5px 10px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+[name="dis"] a:hover {
+    /* Nota: Se corrigió el color hexadecimal que estaba vacío en el shadow */
+    box-shadow: inset 0 10px 0 rgba(0,0,0,0.2), inset 0 0px 0 rgba(0,0,0,0.2);
+    background: rgba(190, 255, 35, 1); /* Beba (67753904) */
+    color: #000;
+    letter-spacing: 2px;
+}
+/* --- Contenedor 'about' (Menú lateral oculto) --- */
+[name="about"] {
+    overflow: visible;
+    position: absolute;
+    top: 50%; /* Cambiado de 30% a 50% para centrarlo verticalmente */
+    transform: translateY(-50%); /* Ayuda a que el centrado sea perfecto sin importar la resolución */
+    left: -140px;
+    background-color: #000000;
+    height: auto; /* Cambiado de 450px a auto. Esto quita todo el espacio vacío sobrante */
+    padding-bottom: 15px; /* Un pequeño margen abajo para que el video no quede pegado al borde */
+    width: 150px;
+    text-align: center;
+    border-top: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    opacity: 0.65;
+    transition: 2s ease-in-out;
+}
+
+[name="about"]:hover {
+    left: 0px;
+}
+
+[name="about"] a {
+    opacity: 0.2;
+    text-transform: capitalize;
+    color: #838383;
+    text-align: center;
+    padding: 3px 0px;
+    width: 95px;
+    background: #888;
+    display: block;
+    transition: 800ms;
+    text-decoration: none;
+}
+
+[name="about"] a:hover {
+    background: #000000;
+    color: #c2c2c2;
+    opacity: 0.8;
+    width: 120px;
+}
+
+[name="about"] p {
+    margin-top: 1px;
+    font-size: 8px;
+    transition: 200ms ease-out;
+}
+
+[name="about"] p:hover {
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 8px;
+}
+
+/* --- Otros selectores de información --- */
+[name="aboutme"] {
+    position: absolute;
+    top: 30%;
+    margin-top: -40px;
+    left: 0;
+    margin-left: 152px;
+}
+
+[name="info"] {
+    margin: auto;
+    width: 195px;
+    text-align: justify;
+}
